@@ -6,6 +6,10 @@
 <% end %>
 
 <div class="container">
+
+<div class="welcome">
+	¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas en nuestra web y si alguna tienda lo tiene se pondrá en contacto contigo!
+</div>
 <div class="row">
 <div class="col-md-6">
 <%= form_for @request do |f| %>
@@ -13,7 +17,9 @@
  What are you looking for? <%= f.text_field :product, class: 'form_control' %>
 </div>
 <div class='row_two'>
-  Where? <%= f.text_field :place, class: 'form_control' %>
+
+ Where?  <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia']), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
+
  </div>
  <div class='row_three'>
   Your name <%= f.text_field :name, class: 'form_control' %>
@@ -21,15 +27,15 @@
  <div class='row_four'>
   Your e-mail <%= f.email_field :email, class: 'form_control' %>
 </div>
- <div class='row_five'>
+
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
-</div>
+
 <% end %>
 </div>
 <div class="col-md-6">
 <div class="row">
-  <div class="col-md-3"><img src="home_img.jpg" height="250" width="200"></div>
-  <div class="col-md-3">LookFinder</div>
+  <div class="col-md-6"><img src="home_img.jpg" height="250" width="200"></div>
+  <div class="col-md-6"><img src="home_img2.jpeg" height="250" width="200"></div>
 </div>
 </div>
 </div>
