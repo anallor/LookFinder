@@ -1,0 +1,39 @@
+
+<% if @request.errors.any? %>
+<% @request.errors.messages.each do |msg| %>
+    <li><%= msg %></li>
+<% end %>
+<% end %>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= form_for @request do |f| %>
+<div class='row_one'>
+ What are you looking for? <%= f.text_field :product, class: 'form_control' %>
+</div>
+<div class='row_two'>
+  Where? <%= f.text_field :place, class: 'form_control' %>
+ </div>
+ <div class='row_three'>
+  Your name <%= f.text_field :name, class: 'form_control' %>
+ </div>
+ <div class='row_four'>
+  Your e-mail <%= f.email_field :email, class: 'form_control' %>
+</div>
+ <div class='row_five'>
+  <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
+</div>
+<% end %>
+</div>
+<div class="col-md-6">
+<div class="row">
+  <div class="col-md-3"><img src="home_img.jpg" height="250" width="200"></div>
+  <div class="col-md-3">LookFinder</div>
+</div>
+</div>
+</div>
+</div>
+
+
+	

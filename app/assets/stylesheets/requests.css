@@ -1,0 +1,25 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+
+
+.btn_lookFinder {
+
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #e8dfe5;
+  padding: 5px 40px 7px 40px;
+
+}
+
+.row_one {
+	margin-top: 15px;
+}
+
+.row_five {
+	margin-top: 15px;
+}

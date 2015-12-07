@@ -1,0 +1,27 @@
+<article>
+Hola <%= @request.name %>
+Las tiendas de <%= @request.place %> han recibido lo que buscas. Si lo tienen se pondrán en contacto contigo 
+
+Mientras tanto estas son las tiendas de tu área de nuestra base de datos. Puedes ponerte en contacto con ellas:
+
+
+<ul>
+<% @stores_by_place.each do |store| %>
+
+<li>
+<%= store.name %>
+<%= store.postcode %>
+<%= store.place %>
+</li>
+<% end %>
+
+</ul>
+
+
+<%= link_to 'Home', "/" %>
+<%= link_to 'Looks', "/looks" %>
+
+</article>
+
+<aside>
+</aside>
