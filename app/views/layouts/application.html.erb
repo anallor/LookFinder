@@ -3,27 +3,35 @@
 <head>
   <title>Lookfinder</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav>
-	<img src="/LOGO.png" height="100" width="350">
+<div id="wraper">
+	<header>	
+		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 100, :width => 350), '/' %></div>
+
+<div class='menu'>
+	<h4>
 	<%= link_to 'Home', '/' %>
 	<%= link_to 'Looks', '/looks' %>
 	<% if user_signed_in? %>
-		<h3>
-		Welcome <%= current_user.name %>
-		<%= current_user.email %>
+		
+		<%= link_to 'Make a new request', '/' %>
 		<%= link_to 'My profile', user_path(current_user) %>
 		<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
-		</h3>
+		<br>
+		Welcome <%= current_user.name %>
 		<% else %>
 		<%= link_to 'Sign_up', new_user_registration_path %>
 		<%= link_to 'Login', new_user_session_path %>
 		<% end %>
-	</nav>
+	</h4>
+	</div>
+	</header>
+	
 
 <%= yield %>
 <footer>
@@ -36,6 +44,6 @@
 		¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder
 	</ul>
 </footer>
-
+</div>
 </body>
 </html>

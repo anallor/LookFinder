@@ -3,7 +3,12 @@
   They will automatically be included in application.css.
 */
 
-
+.welcome {
+  width: 50%;
+}
+.row {
+  margin-left: 10px;
+}
 
 .btn_lookFinder {
 
@@ -19,17 +24,18 @@
 .form_control {
 	border-radius: 6px;
 	width: 400px;
+  height: 35px;
 }
 
 .select_control {
 	  background: white;
-   width: 350px;
+   width: 400px;
    padding: 5px;
    font-size: 16px;
    line-height: 1;
    border: 1;
    border-radius: 0;
-   height: 34px;
+   height: 35px;
 }
 
 .row_one {

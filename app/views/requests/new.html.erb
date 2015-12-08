@@ -8,18 +8,19 @@
 <div class="container">
 
 <div class="welcome">
-	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Introduce lo que buscas y si alguna tienda lo tiene se pondrá en contacto contigo!
+	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas!
+</div>
 <% if user_signed_in? %>
 </div>
 <div class="row">
 <div class="col-md-6">
 <%= form_for @request do |f| %>
 <div class='row_one'>
- What are you looking for? <%= f.text_field :product, class: 'form_control' %>
+ What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
 </div>
 <div class='row_two'>
 
- Where?  <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao']), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
+ Where?  <br><%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
 
  </div>
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
@@ -32,18 +33,18 @@
 <div class="col-md-6">
 <%= form_for @request do |f| %>
 <div class='row_one'>
- What are you looking for? <%= f.text_field :product, class: 'form_control' %>
+ What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
 </div>
 <div class='row_two'>
 
- Where?  <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao']), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
+ Where?  <br> <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
 
  </div>
  <div class='row_three'>
-  Your name <%= f.text_field :name, class: 'form_control' %>
+  Your name <br><%= f.text_field :name, class: 'form_control' %>
  </div>
  <div class='row_four'>
-  Your e-mail <%= f.email_field :email, class: 'form_control' %>
+  Your e-mail <br><%= f.email_field :email, class: 'form_control' %>
 </div>
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>

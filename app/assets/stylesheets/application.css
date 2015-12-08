@@ -17,21 +17,33 @@
  body {
  	display: block;
  }
- nav {
+ header {
  	background-color: black;
+ }
+.menu {
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+.logo {
+
 }
 
+h4 {
+	color: white;
+}
+
+}
 a {
 	color: #aaa8aa;
 }
 
 footer {
-margin-top: 5px;
+margin-top: 10px;
 background-color: #aaa8aa;
-position: absolute;
-color: white;
-height: 100px;
-bottom: 0;
-width: 100%;
+  position:absolute;
+   left:0px;
+   bottom:0px;
+   height:90px;
+   width:100%;
 
 }
