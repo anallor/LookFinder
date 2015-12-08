@@ -12,7 +12,16 @@
 	<img src="/LOGO.png" height="100" width="350">
 	<%= link_to 'Home', '/' %>
 	<%= link_to 'Looks', '/looks' %>
-
+	<% if user_signed_in? %>
+		<h3>
+		Welcome <%= current_user.name %>
+		<%= current_user.email %>
+		<%= link_to 'My profile', user_path(current_user) %>
+		<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
+		</h3>
+		<% else %>
+		<%= link_to 'Login', new_user_session_path %>
+		<% end %>
 	</nav>
 
 <%= yield %>

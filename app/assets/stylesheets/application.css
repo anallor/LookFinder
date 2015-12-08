@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+ 	display: block;
+ }
  nav {
  	background-color: black;
 }
@@ -22,10 +26,10 @@ a {
 }
 
 footer {
-
+margin-top: 5px;
 background-color: #aaa8aa;
+position: absolute;
 color: white;
-position: fixed;
 height: 100px;
 bottom: 0;
 width: 100%;
