@@ -14,36 +14,61 @@
  *= require_self
  */
 
- body {
- 	display: block;
- }
- header {
- 	background-color: black;
- }
-.menu {
-	margin-left: 15px;
-	margin-bottom: 5px;
-}
-.logo {
-
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-h4 {
-	color: white;
+.row {
+	margin-top: 10px;
+	
 }
 
+.nav {
+	margin-top: 40px;
+	text-align: center;
 }
-a {
-	color: #aaa8aa;
+
+.top {
+	background-color: black;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
 
 footer {
-margin-top: 10px;
-background-color: #aaa8aa;
-  position:absolute;
-   left:0px;
-   bottom:0px;
-   height:90px;
-   width:100%;
-
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
 }

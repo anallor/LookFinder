@@ -3,37 +3,43 @@
 <head>
   <title>Lookfinder</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="index.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
+<div id="demo">
 <body>
-<div id="wraper">
-	<header>	
-		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 100, :width => 350), '/' %></div>
+	
+		
 
-<div class='menu'>
-	<h4>
-	<%= link_to 'Home', '/' %>
-	<%= link_to 'Looks', '/looks' %>
+<div class='row top'>
+	<div class="col-sm-6">
+		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 80, :width => 330), '/' %></div>
+	</div>
+	<div class="col-sm-6 nav">
+	<h5>
+	<%= link_to 'Home - ', '/' %>
+	<%= link_to 'Looks - ', '/looks' %>
 	<% if user_signed_in? %>
 		
-		<%= link_to 'Make a new request', '/' %>
-		<%= link_to 'My profile', user_path(current_user) %>
+		<%= link_to 'Make a new request - ', '/' %>
+		<%= link_to 'My profile - ', user_path(current_user) %>
 		<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
-		<br>
-		Welcome <%= current_user.name %>
 		<% else %>
-		<%= link_to 'Sign_up', new_user_registration_path %>
+		<%= link_to 'Sign_up - ', new_user_registration_path %>
 		<%= link_to 'Login', new_user_session_path %>
 		<% end %>
-	</h4>
-	</div>
-	</header>
+	</h5>
+   </div>
+</div>
+<hr>
 	
 
 <%= yield %>
+
+<hr>
 <footer>
 	<ul>
 		<li>Contact</li>
@@ -44,6 +50,7 @@
 		¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder
 	</ul>
 </footer>
-</div>
+
 </body>
+</div>
 </html>

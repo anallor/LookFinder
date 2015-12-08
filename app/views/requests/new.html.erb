@@ -1,4 +1,6 @@
-
+	<% if user_signed_in? %>
+		Welcome <%= current_user.name %>
+	<% end %>
 <% if @request.errors.any? %>
 <% @request.errors.messages.each do |msg| %>
     <li><%= msg %></li>
@@ -8,7 +10,7 @@
 <div class="container">
 
 <div class="welcome">
-	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas!
+	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
 </div>
 <% if user_signed_in? %>
 </div>
