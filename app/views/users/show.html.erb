@@ -1,3 +1,16 @@
 <%= @user.name %>
 
-Your queries:
+Your requests:
+
+
+<ul>
+ <% @requests.each do |request| %>
+<li>
+     Producto: <p> <b><%= request.product %></b> </p>
+      Place: <p> <%= request.place %> </p>
+      Request realizada el: <p> <%= request.created_at %> </p>
+
+</li>
+  <% end %>
+
+</ul>

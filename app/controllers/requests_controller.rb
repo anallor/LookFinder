@@ -5,8 +5,8 @@ class RequestsController < ApplicationController
 	end
 
 	def create
-		
-		@request = Request.new request_params
+		@user = User.last
+		@request = @user.requests.new request_params
 
 		@stores_by_place = Store.where(Store.arel_table[:place].matches(@request.place))
 		 s = @stores_by_place
