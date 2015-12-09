@@ -1,5 +1,5 @@
 class AddLongitudeToStore < ActiveRecord::Migration
   def change
-    add_column :stores, :longitude, :integer
+    add_column :stores, :longitude, :float
   end
 end
