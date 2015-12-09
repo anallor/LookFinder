@@ -6,6 +6,7 @@ class CreateStores < ActiveRecord::Migration
       t.string :telephone
       t.string :place
       t.string :postcode
+      t.string :address
 
       t.timestamps null: false
     end
