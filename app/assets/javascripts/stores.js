@@ -1,6 +1,11 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "/stores/"+window.location.href[window.location.href.length-1],
+        success: function(data){
 
+var latitude = data.latitude;
+var longitude = data.longitude;
 
 var map;
 
@@ -10,12 +15,11 @@ if ("geolocation" in navigator){
 
 function onLocation(position){
   var myPosition = {
-    lat: position.coords.latitude,
-    lng: position.coords.longitude
+    lat: latitude,
+    lng: longitude
   };
 
   createMap(myPosition);
-  setupAutocomplete();
 }
 
 function onError(err){
@@ -38,18 +42,6 @@ function createMap(position){
     createMarker(position)
 }
 
-function setupAutocomplete(){
-  var input = $('#get-places')[0];
-  var autocomplete = new google.maps.places.Autocomplete(input);
-  autocomplete.addListener('place_changed', function(){
-    var place = autocomplete.getPlace();
-    if (place.geometry.location) {
-      map.setCenter(place.geometry.location);
-      map.setZoom(17);
-      createMarker(place.geometry.location);
-    } else {
-      alert("The place has no location...?")
-    }
-  });
 }
+});
 
