@@ -4,17 +4,38 @@
 
 $( document ).ready(function() {
 
-$('.ideas3').hover(function(){
-   $('.three').html('LBD + Perfecto de cuero negra');
+$('.look1').hover(function(){
+   $('.look1').html('LBD + Perfecto de cuero negra');
 });
 
-$('.ideas2').hover(function(){
-   $('.two').html('Falda de tul rosa');
+$('.look2').hover(function(){
+   $('.look2').html('Falda de tul rosa');
 });
 
-$('.ideas1').hover(function(){
-   $('.one').html('Falda de tul negra');
+$('.look3').hover(function(){
+   $('.look3').html('Falda de tul negra');
 });
+
+$('.look8').hover(function(){
+   $('.look8').html('Falda de tul negra');
+});
+
+$('.look4').hover(function(){
+   $('.look4').html('LBD + Perfecto de cuero negra');
+});
+
+$('.look5').hover(function(){
+   $('.look5').html('Falda de tul rosa');
+});
+
+$('.look6').hover(function(){
+   $('.look6').html('Falda de tul negra');
+});
+
+$('.look7').hover(function(){
+   $('.look7').html('Falda de tul negra');
+});
+
 
 });
 
