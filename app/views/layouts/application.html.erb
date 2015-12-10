@@ -10,12 +10,13 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<div id="demo">
+
 <body>
 	
-		
+<div id="wraper">
 
-<div class='row top'>
+<div id="header">
+
 	<div class="col-sm-6">
 		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 80, :width => 330), '/' %></div>
 	</div>
@@ -34,14 +35,16 @@
 		<% end %>
 	</h5>
    </div>
+
 </div>
-<hr>
-	
+
+<div id="content">
 
 <%= yield %>
 
-<hr>
-<!-- <footer>
+</div>
+
+<div id="footer">
 	<ul>
 		<li>Contact</li>
 		<li>Información</li>
@@ -50,8 +53,10 @@
 	<ul>
 		¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder
 	</ul>
-</footer> -->
+</div>
+
+</div>
 
 </body>
-</div>
+
 </html>

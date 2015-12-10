@@ -2,13 +2,11 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.container {
+  background-color: black;
+  margin-top: 20px;
+}
 
-.welcome {
-  width: 50%;
-}
-.row {
-  margin-left: 10px;
-}
 
 .btn_lookFinder {
 

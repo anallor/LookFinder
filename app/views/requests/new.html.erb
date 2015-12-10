@@ -1,4 +1,6 @@
-	<% if user_signed_in? %>
+	<div class="container">
+
+  <% if user_signed_in? %>
 		Welcome <%= current_user.name %>
 	<% end %>
 
@@ -8,61 +10,45 @@
 <% end %>
 <% end %>
 
-<div class="container">
 
-<div class="welcome">
 	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
-</div>
+
 <% if user_signed_in? %>
-</div>
-<div class="row">
-<div class="col-md-6">
+
+
 <%= form_for @request do |f| %>
-<div class='row_one'>
+
  What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
-</div>
-<div class='row_two'>
+
 
  Where?  <br><%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
 
- </div>
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
 
 <% end %>
 <% else %>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6">
+
 <%= form_for @request do |f| %>
-<div class='row_one'>
+
  What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
-</div>
-<div class='row_two'>
 
  Where?  <br> <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
 
- </div>
- <div class='row_three'>
+
   Your name <br><%= f.text_field :name, class: 'form_control' %>
- </div>
- <div class='row_four'>
+ 
   Your e-mail <br><%= f.email_field :email, class: 'form_control' %>
-</div>
+
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
 
 <% end %>
 <% end %>
+
+¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
+
 </div>
-<div class="col-md-6">
-<div class="row">
-  <div class="col-md-6"><img src="home_img.jpg" height="250" width="200"></div>
-  <div class="col-md-6"><img src="home_img2.jpeg" height="250" width="200"></div>
-</div>
-</div>
-</div>
-</div>
+
 
 
 	
