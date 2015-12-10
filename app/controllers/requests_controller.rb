@@ -2,6 +2,7 @@ class RequestsController < ApplicationController
 
 	def new
 		@request = Request.new
+		@stores = Store.all
 	end
 
 	def create

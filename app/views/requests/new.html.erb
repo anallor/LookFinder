@@ -1,27 +1,28 @@
 	<div class="container">
 
-  <% if user_signed_in? %>
-		Welcome <%= current_user.name %>
-	<% end %>
+  <div class="welcome">
 
-<% if @request.errors.any? %>
-<% @request.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-<% end %>
-<% end %>
-
-
+<div class="row sentence">
 	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="form">
 
 <% if user_signed_in? %>
 
 
 <%= form_for @request do |f| %>
 
- What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
+ <strong>What are you looking for?</strong> <br><%= f.text_field :product, class: 'form_control' %> <br>
 
 
- Where?  <br><%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
+ <strong>Where? - Selecciona una ciudad del despegable</strong>  <br><%= f.select :place, @stores.map {|r| [r.place] }.sort, {}, {required: 'true', autofocus: 'true', class: 'select_control'} %> <br><br>
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
 
@@ -30,14 +31,14 @@
 
 <%= form_for @request do |f| %>
 
- What are you looking for? <br><%= f.text_field :product, class: 'form_control' %>
+ <strong>What are you looking for?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br>
 
- Where?  <br> <%= f.select :place, options_for_select(['Alicante', 'Madrid', 'Valencia', 'Barcelona', 'Murcia', 'Sevilla', 'Bilbao', 'A Coruña', 'Málaga', 'Toledo', 'Oviedo', 'Santander', 'San Sebastián', 'Almería', 'Granada', 'Castellón', 'Vigo', 'Pontevedra', 'Santiago de Compostela', 'Lleida', 'Menorca'].sort), {}, {required: 'true', autofocus: 'true', class: 'select_control'} %>
+ <strong>Where? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @stores.map {|r| [r.place] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
 
 
-  Your name <br><%= f.text_field :name, class: 'form_control' %>
+  <strong>Your name</strong> <br><%= f.text_field :name, :placeholder => " Write your name here",class: 'form_control' %><br>
  
-  Your e-mail <br><%= f.email_field :email, class: 'form_control' %>
+  <strong>Your e-mail</strong> <br><%= f.email_field :email, :placeholder => " lookfinder@lookfinder.com", class: 'form_control' %><br><br>
 
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
@@ -45,7 +46,20 @@
 <% end %>
 <% end %>
 
-¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
+<% if @request.errors.any? %>
+<% @request.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+<% end %>
+<% end %>
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+</div>
+
+</div>
 
 </div>
 

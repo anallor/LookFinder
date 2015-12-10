@@ -18,21 +18,41 @@ html,
 body {
  height: 100%; margin: 0
 }
+
+p {
+  color: white;
+}
 #wrapper {
 
 }
 #header {
- height: 70px;
+ height: 120px;
  background-color: black;
+}
+
+ul
+{
+    list-style-type: none;
+}
+li {
+  padding: 1px;
 }
 #content {
    min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto [footer-height];
+  background-image: url("/rsz_background_gray.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 #footer {
   background-color: black;
   color: white;
+  position: relative;
+  width: 100%;
  height: [footer-height];
 }

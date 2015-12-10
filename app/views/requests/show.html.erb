@@ -2,28 +2,27 @@
 <div class="response">
 ¡Hola <strong><%= @request.name %></strong>! ¡Gracias por utilizar LookFinder!
 Las tiendas de <%= @request.place %> han recibido lo que buscas. Si lo tienen se pondrán en contacto contigo 
-</div>
-<div class="DBstores">
+
+
 Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> para buscar tus próximas prendas, o ver a continuación las <strong>tiendas de tu área</strong> de nuestra base de datos. Puedes ponerte en contacto con ellas y preguntarles directamente:
 
+</div>
 
+<div class="row">
 <% @stores_by_place.each do |store| %>
+<div class="col-md-4 backprofile">
 <ul>
 <li>
-	
 <%= store.name %>
 <%= store.postcode %>
 <%= store.place %>
 Telephone:
 <%= store.telephone %>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=350x200&sensor=false&zoom=14&markers=#{store.latitude}%2C#{store.longitude}" %>
-
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=350x200&sensor=false&zoom=16&markers=#{store.latitude}%2C#{store.longitude}" %>
 <%= link_to 'Store profile', store_path(store) %>
-
-<div 
 </li>
-
 </ul>
+</div>
 <% end %>
 
 

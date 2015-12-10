@@ -7,6 +7,7 @@ class Request < ActiveRecord::Base
 
 	after_create :send_emails
 
+
 	# def has_stores?
 	# 	Store.exists?(place: place)
 	# end
@@ -15,5 +16,8 @@ class Request < ActiveRecord::Base
 		store_emails = Store.where(place: place).pluck(:email)
 	 	RequestMailer.request_email(store_emails).deliver_now if store_emails.present?
 	end
+
+	
+
 end
 

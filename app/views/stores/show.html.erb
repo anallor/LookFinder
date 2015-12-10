@@ -1,7 +1,22 @@
 <%= @store.name %>
 <%= @store.place %>
 <%= @store.postcode %>
+<%= @store.address %>
+<html>
 
-<%= @store.latitude %>
+  <head>
+    <meta charset="utf-8">
+    <title>Geolocation API</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=14&markers=#{@store.latitude}%2C#{@store.longitude}" %>
+  <body>
+    <div id="input-wrapper">
+      <input type="text" name="get-places" id="get-places" style="width: 400px;>
+    </div>
+    <div id="places"></div>
+    <div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  </body>
+
+</html>

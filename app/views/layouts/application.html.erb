@@ -5,7 +5,6 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -17,23 +16,27 @@
 
 <div id="header">
 
-	<div class="col-sm-6">
-		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 80, :width => 330), '/' %></div>
+	<div class="col-sm-8">
+		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 100, :width => 350), '/' %></div>
 	</div>
-	<div class="col-sm-6 nav">
+	
+	<div class="col-sm-4 nav">
+	<ul>
 	<h5>
-	<%= link_to 'Home - ', '/' %>
-	<%= link_to 'Looks - ', '/looks' %>
+	<li><%= link_to 'Home', '/' %></li>
+	<li><%= link_to 'Looks', '/looks' %></li>
 	<% if user_signed_in? %>
 		
-		<%= link_to 'Make a new request - ', '/' %>
-		<%= link_to 'My profile - ', user_path(current_user) %>
-		<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
+		<li><%= link_to 'Make a new request', '/' %></li>
+		<li><%= link_to 'My profile', user_path(current_user) %></li>
+		<li><%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %></li>
+		<p>Welcome <%= current_user.name %></p>
 		<% else %>
-		<%= link_to 'Sign_up - ', new_user_registration_path %>
-		<%= link_to 'Login', new_user_session_path %>
+		<li><%= link_to 'Sign_up', new_user_registration_path %></li>
+		<li><%= link_to 'Login', new_user_session_path %></li>
 		<% end %>
 	</h5>
+	</ul>
    </div>
 
 </div>
