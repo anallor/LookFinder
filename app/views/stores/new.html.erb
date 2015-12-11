@@ -1,0 +1,26 @@
+<div class="container">
+<%= form_for @store do |f| %>
+
+<strong>Name:</strong> <br><%= f.text_field :name, class: 'form_control' %><br>
+
+<strong>Email:</strong><br><%= f.email_field :email, class: 'form_control' %><br>
+
+<strong>Telephone</strong><br> <%= f.text_field :telephone, class: 'form_control' %><br>
+
+<strong>Place</strong><br><%= f.text_field :place, class: 'form_control' %><br>
+
+<strong>Postcode</strong><br><%= f.text_field :postcode, class: 'form_control' %><br>
+
+<strong>Address</strong><br><%= f.text_field :address, class: 'form_control' %><br>
+
+<strong>Latitude</strong><br><%= f.text_field :latitude, class: 'form_control' %><br>
+
+<strong>Longitude</strong><br><%= f.text_field :longitude, class: 'form_control' %><br>
+ 
+ 
+<br>
+
+  <%= f.submit "Save", :class => 'btn_Save' %>
+
+<% end %>
+</div>

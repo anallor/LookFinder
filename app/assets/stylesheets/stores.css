@@ -5,10 +5,42 @@
 
 
 #map {
-	height: 50vh;
-	width: 50vh;
+	height: 75vh;
+	width: 75vh;
+	border-radius: 5px;
 }
 
 .profile {
 	padding-left: 60px;
+}
+
+.info {
+	background-color: blue;
+	opacity: 0.6;
+	color: white;
+	border-radius: 5px;
+}
+
+.container {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.form_control {
+	border-radius: 6px;
+	width: 400px;
+  height: 40px;
+}
+
+.btn_Save {
+
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.6;
+  background: #088A85;
+  padding: 5px 40px 7px 40px;
+  width: 400px;
+
 }

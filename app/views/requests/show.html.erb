@@ -1,3 +1,4 @@
+<% if @has_stores %>
 
 <div class="response">
 ¡Hola <strong><%= @request.name %></strong>! ¡Gracias por utilizar LookFinder!
@@ -27,5 +28,11 @@ Telephone:
 
 
 </div>
+
+<% else %>
+
+No exist
+
+<% end %>
 
 

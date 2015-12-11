@@ -10,7 +10,7 @@ class RequestsController < ApplicationController
 	 	request = user_signed_in? ? current_user.requests : Request
 	 	@request = request.new request_params
 	 	if @request.save
-	 		# @has_stores = @request.has_stores?
+	 		
 			flash[:notice] = 'Request created successfully'
 			redirect_to request_path(@request.id)
 		else 
@@ -21,6 +21,7 @@ class RequestsController < ApplicationController
 
 	def show
 		@request = Request.find(params[:id])
+		@has_stores = @request.has_stores?
 		@stores_by_place = Store.where(place: @request.place)
 	end
 

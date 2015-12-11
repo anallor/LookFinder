@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   
   resources :requests, only: [:new, :create, :show, :index]
 
-  resources :stores, only: [:index, :show]
+  resources :stores, only: [:index, :show, :new, :create]
 
 end
