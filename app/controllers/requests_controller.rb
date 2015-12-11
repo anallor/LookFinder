@@ -3,6 +3,7 @@ class RequestsController < ApplicationController
 	def new
 		@request = Request.new
 		@stores = Store.all
+		@cities = Place.all
 	end
 
 	def create

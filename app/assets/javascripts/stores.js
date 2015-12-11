@@ -1,7 +1,11 @@
+
+// "/stores/"+window.location.href[window.location.href.length-1],
+var pathArray = window.location.pathname.split( '/' );
+
 $.ajax({
         type: "GET",
         dataType: "json",
-        url: "/stores/"+window.location.href[window.location.href.length-1],
+        url: pathArray[2],
         success: function(data){
 
 var latitude = data.latitude;
