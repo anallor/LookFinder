@@ -24,6 +24,12 @@
   color: white;
 }
 
+.helpers {
+  background-color: #088A85;
+  opacity: 0.6;
+  height: 40px;
+}
+
 
 .col-md-6 {
   height: 450px;
@@ -88,4 +94,8 @@
 
 .DBstores {
 	margin-left: 15px;
+}
+
+.last_requests ul li {
+display: inline;
 }
