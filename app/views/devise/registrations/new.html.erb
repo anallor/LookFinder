@@ -1,20 +1,22 @@
-<h2>Sign up</h2>
+<div class="border-form-div">
+
+<h2>Registro</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
    <div class="field">
-    <%= f.label :name %><br />
+    Nombre<br />
     <%= f.text_field :name, autofocus: true, :style => "width: 500px; height: 35px;" %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
+    E-mail<br />
     <%= f.email_field :email, :style => "width: 500px; height: 35px;" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    Password
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
@@ -22,13 +24,15 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    Password confirmation<br />
     <%= f.password_field :password_confirmation, autocomplete: "off", :style => "width: 500px; height: 35px;" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Registrarse" %>
   </div>
 <% end %>
-
+Si ya estás registrado, logeate aquí:
 <%= render "devise/shared/links" %>
+
+</div>

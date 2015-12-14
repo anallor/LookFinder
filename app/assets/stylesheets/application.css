@@ -21,13 +21,19 @@ body {
 
 p {
   color: white;
+  font-size: 15px;
+}
+
+.nav {
+  margin-top: 45px;
+  text-align: right;
 }
 #wrapper {
 
 }
 #header {
- height: 120px;
- background-color: black;
+ height: 100px;
+ background-color: #272525;
 }
 
 ul
@@ -36,18 +42,20 @@ ul
 }
 li {
   padding: 1px;
+  display: inline;
+  margin-right: 20px;
 }
 #content {
    min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto [footer-height];
-  background-image: url("/rsz_background_gray.jpg");
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
+
+}
+
+.loged {
+  color: white;
 }
 #footer {
   background-color: black;
@@ -55,4 +63,33 @@ li {
   position: relative;
   width: 100%;
  height: [footer-height];
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.border-form-div {
+  /*max-width: 300px;*/
+  height: 500px;
+  padding: 19px 29px 29px;
+  /*margin: 0 auto 20px;*/
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
 }

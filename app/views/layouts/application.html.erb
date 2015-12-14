@@ -6,6 +6,7 @@
    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -17,21 +18,22 @@
 
 <div id="header">
 
-	<div class="col-sm-8">
+	<div class="col-sm-4">
 		<div class='logo'><%= link_to image_tag("/LOGO.png", :height => 100, :width => 350), '/' %></div>
 	</div>
 	
-	<div class="col-sm-4 nav">
+	<div class="col-sm-8 nav">
 	<ul>
 	<h5>
 	<li><%= link_to 'Home', '/' %></li>
 	<li><%= link_to 'Looks', '/looks' %></li>
 	<% if user_signed_in? %>
 		
-		<li><%= link_to 'Make a new request', '/' %></li>
-		<li><%= link_to 'My profile', user_path(current_user) %></li>
+		<li><%= link_to 'Nueva búsqueda', '/' %></li>
+		<li><%= link_to 'Perfil', user_path(current_user) %></li>
 		<li><%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %></li>
-		<p>Welcome <%= current_user.name %></p>
+		<li class="loged">Welcome <%= current_user.name %></li>
+
 		<% else %>
 		<li><%= link_to 'Sign_up', new_user_registration_path %></li>
 		<li><%= link_to 'Login', new_user_session_path %></li>
@@ -55,7 +57,7 @@
 		<li>Condiciones de privacidad y cookies</li>
 	</ul>
 	<ul>
-		<%= link_to '¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder', new_store_path %>
+		<%= link_to '¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder', new_store_path %><br>
 	</ul>
 </div>
 

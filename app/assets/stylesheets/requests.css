@@ -2,7 +2,32 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+article {
+/*   background-image: url("/rsz_background_gray.jpg");
+  background-size: cover;
+    background-repeat: no-repeat;*/
+  overflow: scroll;
+  height: 500px;
+  
+}
+
+
+span {
+  height: 550px;
+}
 .container {
+ 
+}
+
+p {
+  font-size: 60px;
+  font-style: bold;
+}
+
+.message {
+  text-align: center;
+  padding-top: 100px;
 }
 
 .welcome {
@@ -12,8 +37,11 @@
   height: 100px;
   text-align: center;
   margin-top: 10px;
+  margin-left: 20px;
 }
-
+.show {
+  height: 500px;
+}
 .response {
   background-color: #088A85;
   opacity: 0.6;
@@ -38,10 +66,12 @@
 
 .form {
   margin-left: 40px;
+  color: black;
 }
 
 .sentence {
   padding: 10px;
+  color: white;
 }
 
 
@@ -73,6 +103,7 @@
    border: 1;
    border-radius: 0;
    height: 35px;
+   color: gray;
 }
 
 .row_one {
@@ -83,8 +114,6 @@
 .row_four {
  margin-bottom: 20px;
 }
-
-
 
 .response {
 	font-size: 16px;
@@ -99,3 +128,74 @@
 .last_requests ul li {
 display: inline;
 }
+
+html {
+  height: 100%;
+  overflow: hidden;
+
+}
+body {
+  color: black;
+  margin:0;
+  padding:0;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+header {
+ /* box-sizing: border-box;*/
+  min-height: 40vw;
+ /* padding: 30vw 0 5vw;*/
+  position: relative;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
+  width: 100vw;
+}
+header, header:before {
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background-color: #8a8;
+  background-image: url("/rsz_background_gray.jpg");
+  background-size: cover;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+header * {
+  font-weight: normal;
+  margin: 0;
+ /* padding: 1em 0;*/
+}
+header p {
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  padding-bottom: 15px;
+    background-color: #088A85;
+    opacity: 0.6;
+}
+main {
+  background-color: hsl(60, 10%, 10%);
+  height: 200px;
+  line-height: 1.7;
+  max-width: 100%;
+  padding: 5% calc(50% - 40em) 25%;
+  position: relative;
+  z-index: 2;
+}
+

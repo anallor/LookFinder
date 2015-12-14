@@ -3,3 +3,7 @@
   They will automatically be included in application.css.
 */
 
+.show-profile {
+	height: 500px;
+	margin-left: 20px;
+}

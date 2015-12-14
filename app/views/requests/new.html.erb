@@ -1,13 +1,18 @@
-	<div class="container">
 
-  <div class="welcome">
+
+<header>
+<article>
+
+<div class="container">
+
+<!-- <div class="welcome">
 
 <div class="row sentence">
 	¿Llevas tiempo buscando una falda de tul como la de Carrie Bradshaw? ¿has visto un vestido por la calle y no tienes ni idea de dónde conseguirlo? ¡Ahorra tiempo buscando esa prenda de ropa que tanto deseas! Logeate para guardar tus búsquedas o entra como un usuario anónimo
 </div>
 
 </div>
-
+ -->
 <div class="row">
 
 <div class="col-md-6">
@@ -19,10 +24,10 @@
 
 <%= form_for @request do |f| %>
 
- <strong>What are you looking for?</strong> <br><%= f.text_field :product, class: 'form_control' %> <br>
+ <strong>¿Qué prenda estás buscando?</strong> <br><%= f.text_field :product, class: 'form_control' %> <br><br>
 
 
- <strong>Where? - Selecciona una ciudad del despegable</strong>  <br><%= f.select :place, @cities.map {|c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true', class: 'select_control'} %> <br><br>
+ <strong>¿Dónde? - Selecciona una ciudad del despegable</strong>  <br><%= f.select :place, @cities.map {|c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true', class: 'select_control'} %> <br><br>
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
 
@@ -31,14 +36,14 @@
 
 <%= form_for @request do |f| %>
 
- <strong>What are you looking for?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br>
+ <strong>¿Qué prenda estás buscando?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br><br>
 
- <strong>Where? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map { |c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
+ <strong>¿Dónde? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map { |c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
 
 
-  <strong>Your name</strong> <br><%= f.text_field :name, :placeholder => " Write your name here",class: 'form_control' %><br>
+  <strong>Déjanos tu nombre</strong> <br><%= f.text_field :name, :placeholder => " Write your name here",class: 'form_control' %><br><br>
  
-  <strong>Your e-mail</strong> <br><%= f.email_field :email, :placeholder => " lookfinder@lookfinder.com", class: 'form_control' %><br><br>
+  <strong>Y por último tu e-mail</strong> <br><%= f.email_field :email, :placeholder => " lookfinder@lookfinder.com", class: 'form_control' %><br><br>
 
 
   <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
@@ -55,46 +60,23 @@
 
 </div>
 
-<div class="col-md-6">
-
 </div>
 
-</div>
+</article>
 
-<div class="row helpers">
-	<div class="col-md-2">	
-		Americana negra
+  <p>LookFinder! Tu punto de encuentro con las tiendas de tu ciudad</p>
+
+</header>
+<main>
+	<div class="row">
+		<div class="col-md-4">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
 	</div>
-
-	<div class="col-md-2">	
-		Americana negra
+		<div class="col-md-4">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
 	</div>
-
-		<div class="col-md-2">	
-		Americana negra
+	<div class="col-md-4">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
 	</div>
-
-	<div class="col-md-2">	
-		Americana negra
-	</div>
-
-	<div class="col-md-2">	
-		Americana negra
-	</div>
-
-	<div class="col-md-2">	
-		Americana negra
-	</div>
-
-
-
-
-</div>
-
-</div>
-
-
-
-
-
-	
+	 </div>
+</main>

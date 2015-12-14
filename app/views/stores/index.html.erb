@@ -1,11 +1,12 @@
-
+<div class="stores-list">
 <ul>
 <% @stores.each do |store| %>
-<li>
-<%= store.name %>
+<li class="store-list">
+<strong><%= store.name %></strong>
 <%= store.place %>
 <%= store.email %>
 </li>
-
+<br>
 <% end %>
 </ul>
+</div>
