@@ -1,8 +1,8 @@
 <div class="show-profile">
 
-Hello <strong><%= @user.name %></strong> <br>
+Hola <strong><%= @user.name %></strong> <br>
 
-Your requests:
+Tus búsquedas:
 
 <ul>
  <% @requests.each do |request| %>
@@ -16,6 +16,11 @@ Your requests:
 
 </ul>
 
+<%= link_to "Darme de baja de LookFinder", admin_destroy_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro de que deseas darte de baja de LookFinder?" } %>
+
 </div>
+
+
+
 
 

@@ -1,6 +1,11 @@
+.back {
+	background-color: black;
+}
+
 .photo-grid {
 	max-width: 1106px;
 	text-align: center;
+
 }
 
 .photo-grid li {
@@ -67,10 +72,3 @@
   overflow: hidden;
   width: 400px;
 }
-
-
-
-
-
-
-
