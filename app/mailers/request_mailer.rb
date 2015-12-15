@@ -4,7 +4,7 @@ class RequestMailer < ApplicationMailer
 		@request = request
 		@name = requester_name
 		@email = requester_email
-		mail(to: email, subject: 'Somebody is looking for something')
+		mail(to: email, subject: 'Nueva búsqueda de LookFinder')
 		
 	end
 end

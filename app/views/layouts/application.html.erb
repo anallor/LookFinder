@@ -7,8 +7,8 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
-  <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
@@ -54,14 +54,12 @@
 <div id="footer">
 	<ul>
 		<li><%= link_to 'Contacto', '/contact' %></li>
-		<li>Información</li>
-		<li>Condiciones de privacidad y cookies</li>
 	</ul>
 	<ul>
-		¿Eres una tienda? Date de alta en nuestra base de datos y forma parte de LOOKFINDER <%= link_to 'Alta', new_store_path %> <br>
+		¿Eres una tienda? Date de alta en nuestra base de datos y forma parte de LOOKFINDER <%= link_to 'Registrarse', new_store_path %> <br>
 	</ul>
 	<ul>
-		¿Ya formas parte de la base de datos? Accede a tu perfil de tienda<%= link_to 'Acceder', '/tiendas' %><br>
+		¿Ya formas parte de la base de datos? Accede a tu perfil de tienda <%= link_to 'Acceder', '/tiendas' %><br>
 	</ul>
 </div>
 

@@ -1,3 +1,4 @@
+
 <div class="container">
 <%= form_for @message, url: contact_path do |message_form| %>
   <fieldset>
@@ -21,3 +22,5 @@
   </fieldset>
 <% end %>
 </div>
+
+<%= flash[:notice]%>

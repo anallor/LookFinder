@@ -67,7 +67,11 @@ p {
 .form {
   margin-left: 40px;
   color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  color: #088A85;
 }
+
 
 .sentence {
   padding: 10px;
@@ -78,9 +82,9 @@ p {
 .btn_lookFinder {
 
   border-radius: 9px;
-  font-family: Arial;
+  font-family: 'Josefin Sans', sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.6;
   background: #088A85;
   padding: 5px 40px 7px 40px;
@@ -182,15 +186,18 @@ header * {
  /* padding: 1em 0;*/
 }
 header p {
-  font-size: 25px;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 0;
   padding-bottom: 15px;
-    background-color: #088A85;
-    opacity: 0.6;
+    /*background-color: #3498db;*/
+    height: 150px;
+    color: #088A85;
+font-family: 'Poiret One', cursive;
+ 
 }
 main {
-  background-color: hsl(60, 10%, 10%);
+  background-color: white;
   height: 200px;
   line-height: 1.7;
   max-width: 100%;
@@ -198,18 +205,28 @@ main {
   position: relative;
   z-index: 2;
   text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 .explication {
   width: 1000px;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 .titles {
   
   text-align: center;
+  font-size: 18px;
+  color: #088A85;
+  margin-bottom: 20px;
+  font-weight: bold;
+
 }
 .description {
   
-    padding-right: 20px;
+    display: block;
+    padding: 2px;
+    padding-right: 40px;
 
 }
 
