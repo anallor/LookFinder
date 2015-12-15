@@ -26,18 +26,18 @@
 	<div class="col-sm-8 nav">
 	<ul>
 	<h5>
-	<li><%= link_to 'Home', '/' %></li>
+	<li><%= link_to 'LookFinder', '/' %></li>
 	<li><%= link_to 'Looks', '/looks' %></li>
 	<% if user_signed_in? %>
 		
 		<li><%= link_to 'Nueva búsqueda', '/' %></li>
 		<li><%= link_to 'Perfil', user_path(current_user) %></li>
-		<li><%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %></li>
-		<li class="loged">Welcome <%= current_user.name %></li>
+		<li><%= link_to 'Salir', destroy_user_session_path, method: 'DELETE' %></li>
+		<li class="loged">Bienvenido <%= current_user.name %></li>
 
 		<% else %>
-		<li><%= link_to 'Sign_up', new_user_registration_path %></li>
-		<li><%= link_to 'Login', new_user_session_path %></li>
+		<li><%= link_to 'Registro', new_user_registration_path %></li>
+		<li><%= link_to 'Entrar', new_user_session_path %></li>
 		<% end %>
 	</h5>
 	</ul>
@@ -53,15 +53,15 @@
 
 <div id="footer">
 	<ul>
-		<li><%= link_to 'Contact', '/contact' %></li>
+		<li><%= link_to 'Contacto', '/contact' %></li>
 		<li>Información</li>
 		<li>Condiciones de privacidad y cookies</li>
 	</ul>
 	<ul>
-		<%= link_to '¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder', new_store_path %><br>
+		¿Eres una tienda? Date de alta en nuestra base de datos y forma parte de LOOKFINDER <%= link_to 'Alta', new_store_path %> <br>
 	</ul>
 	<ul>
-		<%= link_to '¿Ya formas parte de la base de datos? Accede a tu perfil de tienda' %><br>
+		¿Ya formas parte de la base de datos? Accede a tu perfil de tienda<%= link_to 'Acceder', '/tiendas' %><br>
 	</ul>
 </div>
 

@@ -3,18 +3,22 @@
 Hola <strong><%= @user.name %></strong> <br>
 
 Tus búsquedas:
-
+<div class="row">
 <ul>
  <% @requests.each do |request| %>
+ <div class="col-md-4 requests">
 <li>
-     Producto: <p> <b><%= request.product %></b> </p>
-      Place: <p> <%= request.place %> </p>
-      Request realizada el: <p> <%= request.created_at %> </p>
+     Producto: <strong><%= request.product %></strong><br>
+      Ciudad: <%= request.place %> <br>
+      Búsqueda realizada el: <%= request.created_at.strftime('%d/%m/%Y') %> <br>
 
 </li>
+</div>
   <% end %>
 
 </ul>
+
+</div>
 
 <%= link_to "Darme de baja de LookFinder", admin_destroy_user_path(@user), method: :delete, data: { confirm: "¿Estás seguro de que deseas darte de baja de LookFinder?" } %>
 

@@ -16,13 +16,11 @@ Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> p
 <div class="col-md-4 backprofile">
 <ul>
 <li>
-<%= store.name %>
-<%= store.postcode %>
-<%= store.place %>
-Telephone:
-<%= store.telephone %>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=350x200&sensor=false&zoom=16&markers=#{store.latitude}%2C#{store.longitude}" %>
-<%= link_to 'Store profile', store_path(store) %>
+<strong><%= store.name %></strong><br>
+<%= store.email %><br>
+<%= store.telephone %><br>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=350x200&sensor=false&zoom=16&markers=#{store.latitude}%2C#{store.longitude}" %><br>
+<%= link_to 'Ver más', store_path(store) %>
 </li>
 </ul>
 </div>

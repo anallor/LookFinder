@@ -5,14 +5,28 @@
 
 
 #map {
-	height: 70vh;
-	width: 70vh;
+	height: 69vh;
+	width: 69vh;
 	border-radius: 5px;
+}
+
+#places {
+	height: 69vh;
+	width: 69vh;
+	border-radius: 5px;
+	background: url('/giphy.gif');
+	background-size: cover;
+
 }
 
 .profile {
 	padding-left: 60px;
 	margin-bottom: 30px;
+}
+
+.show {
+	height: auto;
+	margin: auto;
 }
 
 .info {

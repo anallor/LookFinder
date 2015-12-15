@@ -1,21 +1,23 @@
+<div class="container">
 <%= form_for @message, url: contact_path do |message_form| %>
   <fieldset>
     <div class="field">
-      <%= message_form.text_field :name, placeholder: "Name" %>
+      Nombre<br> <%= message_form.text_field :name, class: 'form_control', placeholder: "Nombre" %><br>
     </div>
     
     <div class="field">
-      <%= message_form.email_field :email, placeholder: "Email"%>
+      E-mail<br> <%= message_form.email_field :email, class: 'form_control',  placeholder: "Email"%><br>
     </div>
     
     <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
+     Mensaje<br> <%= message_form.text_area :content, class: 'form_control_area',  placeholder: "Mensaje"%><br>
     </div>
   </fieldset>
   
   <fieldset>
     <div class="field">
-      <%= message_form.submit "Send" %>
+      <%= message_form.submit "Enviar", :class => 'btn_send' %>
     </div>
   </fieldset>
 <% end %>
+</div>

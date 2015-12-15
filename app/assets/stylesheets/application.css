@@ -65,6 +65,7 @@ li {
   background-color: black;
   color: white;
   position: relative;
+  bottom: 0;
   width: 100%;
  height: [footer-height];
  padding-top: 10px;

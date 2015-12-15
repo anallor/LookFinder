@@ -4,6 +4,12 @@
 */
 
 .show-profile {
-	height: 500px;
+	height: auto;
 	margin-left: 20px;
+	height: 500px;
+}
+
+
+.requests {
+	padding: 5px;
 }

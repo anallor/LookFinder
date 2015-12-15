@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   resources :stores, only: [:index, :show, :new, :create]
 
+  get '/tiendas' => 'stores#home'
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
