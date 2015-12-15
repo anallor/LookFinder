@@ -1,18 +1,10 @@
 class RequestMailer < ApplicationMailer
-	default from: 'lookfinder@gmail.com'
 
-	def request_email(request, store)
-		@stores = Store.all
-		@stores.each do |store|
-		end
+	def request_email(request, email, requester_name, requester_email)
 		@request = request
-		if @request.user_id?
-			@name = @request.user.name
-			@email = @request.user.email
-		else
-			@name = @request.name
-			@email = @request.email
-		end
-		mail(to: store, subject: 'Somebody is looking for something')
+		@name = requester_name
+		@email = requester_email
+		mail(to: email, subject: 'Somebody is looking for something')
+		
 	end
 end

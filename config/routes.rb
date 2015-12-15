@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
 
+get 'contact', to: 'messages#new', as: 'contact'
+post 'contact', to: 'messages#create'
+
 end

@@ -29,7 +29,7 @@
 
  <strong>¿Dónde? - Selecciona una ciudad del despegable</strong>  <br><%= f.select :place, @cities.map {|c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true', class: 'select_control'} %> <br><br>
 
-  <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
+  <%= f.submit "LOOKFIND", :class => 'btn_lookFinder' %>
 
 <% end %>
 <% else %>
@@ -46,7 +46,7 @@
   <strong>Y por último tu e-mail</strong> <br><%= f.email_field :email, :placeholder => " lookfinder@lookfinder.com", class: 'form_control' %><br><br>
 
 
-  <%= f.submit "LookFind", :class => 'btn_lookFinder' %>
+  <%= f.submit "LOOKFIND", :class => 'btn_lookFinder' %>
 
 <% end %>
 <% end %>
@@ -68,15 +68,26 @@
 
 </header>
 <main>
-	<div class="row">
-		<div class="col-md-4">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
+	<div class="row titles">
+		<div class="col-md-4 description">
+	  <p>Usuarios</p>
 	</div>
-		<div class="col-md-4">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
+		<div class="col-md-4 description">
+	  <p>Tiendas</p>
 	</div>
-	<div class="col-md-4">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempora voluptatum porro. Harum odio, sapiente dicta, eum quidem porro atque quisquam impedit officia ullam minus, laudantium vel eaque doloribus rem.</p>
+	<div class="col-md-4 description">
+	  <p>LookFinder</p>
+	</div>
+	 </div>
+	<div class="row explication">
+		<div class="col-md-4 description">
+	  <p>Escribe lo que estás buscando: Una falda de tul, una americana de terciopelo, un top de paillettes... Especfica todo lo que quieras o haz una búsqueda más amplia. Introduce tu nombre y tu e-mail o loggeate, elige en qué ciudad estás buscando esa prenda y en poco tiempo recibirás respuesta de las tiendas de tu zona que tienen que lo que estás buscando</p>
+	</div>
+		<div class="col-md-4 description">
+	  <p>Aumenta las visitas a tu tienda. Si formas parte de la base de datos de LOOKFINDER recibirás las búsquedas de los usuarios. Si tienes la prenda que buscan respóndeles y consigue fácilmente un posible nuevo cliente. No esperes más y forma parte de LOOKFINDER</p>
+	</div>
+	<div class="col-md-4 description">
+	  <p>No pagas nada, no te compromete a nada, ahorra tiempo y esfuerzos, se acabó recorrer toda la ciudad buscando algo, se acabó bucear por Internet, LOOKFINDER: pone en contacto usuarios y tindas</p>
 	</div>
 	 </div>
 </main>

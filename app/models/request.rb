@@ -14,7 +14,17 @@ class Request < ActiveRecord::Base
 		
 	def send_emails
 		store_emails = Store.where(place: place).pluck(:email)
-	 	RequestMailer.request_email(self, store_emails).deliver_now if store_emails.present?
+
+		if user_id?
+			requester_name = user.name
+			requester_email = user.email
+		else
+			requester_name = name
+			requester_email = email
+		end
+		store_emails.each do |email|
+	 	  RequestMailer.request_email(self, email, requester_name, requester_email).deliver_now
+		end
 	end
 
 	

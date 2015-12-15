@@ -7,6 +7,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
+  <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -52,12 +53,15 @@
 
 <div id="footer">
 	<ul>
-		<li>Contact</li>
+		<li><%= link_to 'Contact', '/contact' %></li>
 		<li>Información</li>
 		<li>Condiciones de privacidad y cookies</li>
 	</ul>
 	<ul>
 		<%= link_to '¿Eres una tienda? Ponte en contacto con nosotros y forma parte de LookFinder', new_store_path %><br>
+	</ul>
+	<ul>
+		<%= link_to '¿Ya formas parte de la base de datos? Accede a tu perfil de tienda' %><br>
 	</ul>
 </div>
 

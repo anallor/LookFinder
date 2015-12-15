@@ -6,27 +6,17 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   after_initialize :set_default_role, :if => :new_record?
 
+  after_create :welcome_email
+
+
+private
+
   def set_default_role
-  	unless self.role
-  		self.role = :user
-  	end
+    self.role = :user unless self.role
   end
 
-
-    def create
-    @user = User.new(user_params)
-    if @user.save
-      WelcomeMailer.welcome_email(@user).deliver_now
-      redirect_to user_path
-    else
-      render :new
-    end
-  end
-
-  private
-
-  def user_params
-    params.require(:user).permit(:name, :email)
+  def welcome_email
+      WelcomeMailer.welcome_email(self).deliver_now
   end
 
 

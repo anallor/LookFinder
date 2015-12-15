@@ -197,5 +197,19 @@ main {
   padding: 5% calc(50% - 40em) 25%;
   position: relative;
   z-index: 2;
+  text-align: justify;
+}
+.explication {
+  width: 1000px;
+  margin-left: 50px;
+}
+.titles {
+  
+  text-align: center;
+}
+.description {
+  
+    padding-right: 20px;
+
 }
 
