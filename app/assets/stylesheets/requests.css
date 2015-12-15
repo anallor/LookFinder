@@ -41,6 +41,8 @@ p {
 }
 .show {
   height: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
 }
 .response {
   background-color: #088A85;
@@ -69,7 +71,8 @@ p {
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
-  color: #088A85;
+  color: black;
+  font-weight: 700;
 }
 
 

@@ -20,6 +20,8 @@
 	display: inline-block;
 	margin: 1em;
 	width: 289px;
+	font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .photo-grid img {
@@ -78,4 +80,16 @@
   position: relative;
   overflow: hidden;
   width: 400px;
+
+}
+
+.sup {
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	background-color: black;
+	color: #088A85;
+	text-align: center;
+	padding-top: 30px;
+	
+
 }

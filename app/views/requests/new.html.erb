@@ -41,7 +41,7 @@
  <strong>¿Dónde? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map { |c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
 
 
-  <strong>Déjanos tu nombre</strong> <br><%= f.text_field :name, :placeholder => " Write your name here",class: 'form_control' %><br><br>
+  <strong>Déjanos tu nombre</strong> <br><%= f.text_field :name, :placeholder => " Escribe tu nombre aquí",class: 'form_control' %><br><br>
  
   <strong>Y por último tu e-mail</strong> <br><%= f.email_field :email, :placeholder => " lookfinder@lookfinder.com", class: 'form_control' %><br><br>
 

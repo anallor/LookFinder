@@ -7,9 +7,13 @@
 	height: auto;
 	margin-left: 20px;
 	height: 500px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
 }
 
 
 .requests {
 	padding: 5px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10px;
 }

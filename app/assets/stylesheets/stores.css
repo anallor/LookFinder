@@ -22,6 +22,7 @@
 .profile {
 	padding-left: 60px;
 	margin-bottom: 30px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .show {
@@ -39,12 +40,20 @@
 .container {
 	margin-left: 20px;
 	margin-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
 }
 
 .form_control {
 	border-radius: 6px;
 	width: 400px;
   height: 40px;
+}
+
+.form_control_area{
+	border-radius: 6px;
+	width: 400px;
+  height: 90px;
 }
 
 .btn_Save {
@@ -66,4 +75,10 @@
 
 .store-list {
 	display: block;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+.log_stores{
+	height: 500px;
 }
