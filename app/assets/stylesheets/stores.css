@@ -40,7 +40,7 @@
 
 .container {
 	margin-left: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 }
@@ -58,7 +58,7 @@ h3 {
 .form_control_area{
 	border-radius: 6px;
 	width: 400px;
-  height: 90px;
+  height: 120px;
 }
 
 .btn_Save {
@@ -92,4 +92,12 @@ h3 {
 	margin-left: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
+}
+
+.notice {
+	margin-left: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	color: #088A85;
+
 }

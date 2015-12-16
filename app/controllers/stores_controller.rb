@@ -21,7 +21,7 @@ class StoresController < ApplicationController
 	def create
 	 	@store = Store.new store_params
 	 	if @store.save
-			flash[:notice] = 'Store created successfully'
+			flash[:info] = 'Tienda almacenada en la base de datos satisfactoriamente'
 			redirect_to store_path(@store.id)
 		else 
 			render 'new'

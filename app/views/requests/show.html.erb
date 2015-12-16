@@ -2,6 +2,7 @@
 
 <% if @has_stores %>
 
+
 <div class="response">
 ¡Hola <strong><%= @request.name %></strong>! ¡Gracias por utilizar LookFinder!
 Las tiendas de <%= @request.place %> han recibido lo que buscas. Si lo tienen se pondrán en contacto contigo 
@@ -30,9 +31,10 @@ Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> p
 </div>
 
 <% else %>
-
+<div class="are">
 Hola <%= @request.name %> En este momento no hay tiendas de <%= @request.place %> en nuestra base de datos pero pasa pronto de nuevo por LookFinder porque seguro que ya hemos incorporado nuevas tiendas.
 Gracias!
+</div>
 
 <% end %>
 

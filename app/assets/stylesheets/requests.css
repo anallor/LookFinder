@@ -81,6 +81,13 @@ p {
   color: white;
 }
 
+.are {
+  height: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 20px;
+
+}
+
 
 .btn_lookFinder {
 
@@ -232,4 +239,6 @@ main {
     padding-right: 40px;
 
 }
+
+
 

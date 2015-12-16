@@ -1,5 +1,5 @@
 <div class="container">
-Bienvenido a LOOKFINDER. Una vez hayas completado este paso formarás parte de la base de datos de LOOKFINDER y recibirás las peticiones de los usuarios de tu zona
+Estás a un paso de formar parte de la base de datos de tiendas de LOOKFINDER. Una vez hayas completado este formulario comenzarás a recibir las peticiones de los usuarios de tu zona.
 <div class="row">
 <%= form_for @store do |f| %>
 
@@ -21,14 +21,14 @@ Ciudad<br><%= f.text_field :place, class: 'form_control' %><br>
 
 <div class="col-md-6">
 
-<strong>Descripción de productos</strong><br><%= f.text_area :apparel, class: 'form_control_area' %><br>
+<strong>Descripción de productos y/o marcas</strong><br><%= f.text_area :apparel, class: 'form_control_area' %><br>
 
-<strong>Latitud</strong><br><%= f.number_field :latitude, :step => 'any', class: 'form_control'%><br>
+<!-- <strong>Latitud</strong><br><%= f.number_field :latitude, :step => 'any', class: 'form_control'%><br>
 
-<strong>Longitud</strong><br><%= f.number_field :longitude, :step => 'any', class: 'form_control' %><br>
+<strong>Longitud</strong><br><%= f.number_field :longitude, :step => 'any', class: 'form_control' %><br> -->
 
-<strong>Password</strong><br> <%= f.password_field :password, class: 'form_control' %><br>
-<strong>Confirmar password</strong><br> <%= f.password_field :password_confirmation, class: 'form_control' %>
+<strong>Contraseña</strong><br> <%= f.password_field :password, class: 'form_control' %><br>
+<strong>Confirmar contraseña</strong><br> <%= f.password_field :password_confirmation, class: 'form_control' %>
  
  <br>
  

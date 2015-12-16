@@ -24,7 +24,7 @@
 
 <%= form_for @request do |f| %>
 
- <strong>¿Qué prenda estás buscando?</strong> <br><%= f.text_field :product, class: 'form_control' %> <br><br>
+ <strong>¿Qué prenda de ropa o calzado estás buscando?</strong> <br><%= f.text_field :product, class: 'form_control' %> <br><br>
 
 
  <strong>¿Dónde? - Selecciona una ciudad del despegable</strong>  <br><%= f.select :place, @cities.map {|c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true', class: 'select_control'} %> <br><br>
@@ -36,7 +36,7 @@
 
 <%= form_for @request do |f| %>
 
- <strong>¿Qué prenda estás buscando?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br><br>
+ <strong>¿Qué prenda de ropa o calzado estás buscando?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br><br>
 
  <strong>¿Dónde? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map { |c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
 
@@ -80,7 +80,7 @@
 	</div>
 	<div class="col-md-4 description">
 		<div class="titles">LOOKFINDER</div>
-	  No pagas nada, no te compromete a nada, ahorra tiempo y esfuerzos, se acabó recorrer toda la ciudad buscando algo, se acabó bucear por Internet, LOOKFINDER: pone en contacto usuarios y tindas
+	  No pagas nada, no te compromete a nada, ahorra tiempo y esfuerzos, se acabó recorrer toda la ciudad buscando algo, se acabó bucear por Internet, LOOKFINDER: pone en contacto usuarios y tiendas
 	</div>
 	 </div>
 </main>
