@@ -2,3 +2,18 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.logear {
+	height: 500px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	margin-left: 20px;
+	
+}
+
+.form-control-log {
+	border-radius: 6px;
+	width: 400px;
+  height: 40px;
+}
+

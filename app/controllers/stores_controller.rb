@@ -28,6 +28,19 @@ class StoresController < ApplicationController
 		end
 	end
 
+	def edit
+		@store = Store.find(params[:id])
+	end
+
+	def update
+		@store = Store.find(params[:id])
+    if @store.update_attributes(store_params)
+    	redirect_to store_path(@store.id)
+    else
+      render 'edit'
+    end
+	end
+
 	private
 
 	def store_params

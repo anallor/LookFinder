@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   
   resources :requests, only: [:new, :create, :show, :index]
 
-  resources :stores, only: [:index, :show, :new, :create]
+  resources :stores, only: [:index, :show, :new, :create, :edit, :create]
 
   get '/tiendas' => 'stores#home'
 

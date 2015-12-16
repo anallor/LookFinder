@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 		store = Store.find_by(email: params[:email])
 		if store && store.authenticate(params[:password])
 			session[:store_id] = store.id
-		redirect_to store_path(store)
+		redirect_to '/'
 	  else
 	  	redirect_to 'login'
 	  end

@@ -33,3 +33,11 @@
   width: 400px;
 
 }
+
+.success {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 10px;
+  color: #088A85;
+}

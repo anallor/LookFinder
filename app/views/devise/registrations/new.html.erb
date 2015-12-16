@@ -18,15 +18,15 @@
   </div>
 
   <div class="field">
-    Password
+    Contraseña
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(mínimo <%= @minimum_password_length %> caracteres)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off", :style => "width: 500px; height: 35px;" %>
   </div>
 
   <div class="field">
-    Password confirmation<br />
+    Confirmación de la contraseña<br />
     <%= f.password_field :password_confirmation, autocomplete: "off", :style => "width: 500px; height: 35px;" %>
   </div>
 

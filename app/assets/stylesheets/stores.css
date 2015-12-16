@@ -23,6 +23,7 @@
 	padding-left: 60px;
 	margin-bottom: 30px;
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
 }
 
 .show {
@@ -42,6 +43,10 @@
 	margin-bottom: 10px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .form_control {
@@ -81,4 +86,10 @@
 
 .log_stores{
 	height: 500px;
+}
+
+.edit {
+	margin-left: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
 }

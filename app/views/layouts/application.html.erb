@@ -53,21 +53,25 @@
 
 <div id="footer">
 	<ul>
-		<li><%= link_to 'Contacto', '/contact' %></li>
+		<li><%= link_to 'Contacta con LookFinder', '/contact' %></li>
 	</ul>
 	<ul>
 		¿Eres una tienda? Date de alta en nuestra base de datos y forma parte de LOOKFINDER <%= link_to 'Registrarse', new_store_path %> <br>
 	</ul>
 	<ul>
-		¿Ya formas parte de la base de datos? Accede a tu perfil de tienda <%= link_to 'Acceder', '/tiendas' %><br>
+		¿Ya formas parte de la base de datos? Accede a tu perfil de tienda <%= link_to 'Acceder', '/login' %><br>
+	</ul>
+	<ul>
+<% if current_store %>
+Estás conectado a tu perfil de tienda:<br>
+<%= link_to "Actualiza tu perfil", edit_store_path(current_store) %><br>
+<%= link_to "Log out", "/logout", :method => :delete %>
+<% end %>
 	</ul>
 </div>
 
 </div>
 
-<script type="text/javascript"> $(function ()
-
-{ $("#myModal").modal({show:false }); </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 class RequestsController < ApplicationController
+	before_action :admin_only, only: [:index]
 
 	def new
 		@request = Request.new
