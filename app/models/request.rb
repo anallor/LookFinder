@@ -1,6 +1,6 @@
 class Request < ActiveRecord::Base
 	belongs_to :user
-	validates_presence_of :product
+	validates_presence_of :product, :message => "No dejar campo vacío"
 	validates_presence_of :place
 
 

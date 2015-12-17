@@ -3,12 +3,9 @@
 <% if @has_stores %>
 
 
-<div class="response">
+<div class="responseto">
 ¡Hola <strong><%= @request.name %></strong>! ¡Gracias por utilizar LookFinder!
-Las tiendas de <%= @request.place %> han recibido lo que buscas. Si lo tienen se pondrán en contacto contigo 
-
-
-Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> para buscar tus próximas prendas, o ver a continuación las <strong>tiendas de tu área</strong> de nuestra base de datos. Puedes ponerte en contacto con ellas y preguntarles directamente:
+Las tiendas de <%= @request.place %> han recibido lo que buscas. Si lo tienen se pondrán en contacto contigo. Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> para buscar tus próximas prendas, o ver a continuación las <strong>tiendas de tu área</strong> de nuestra base de datos. Puedes ponerte en contacto con ellas y preguntarles directamente:
 
 </div>
 
@@ -16,11 +13,11 @@ Puedes echar un vistazo a nuestras ideas de <%= link_to 'looks', looks_path %> p
 <% @stores_by_place.each do |store| %>
 <div class="col-md-4 backprofile">
 <ul>
-<li>
+<li class="storebox">
 <strong><%= store.name %></strong><br>
 <%= store.email %><br>
 <%= store.telephone %><br>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=350x200&sensor=false&zoom=16&markers=#{store.latitude}%2C#{store.longitude}" %><br>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x150&sensor=false&zoom=14&markers=#{store.latitude}%2C#{store.longitude}" %><br>
 <%= link_to 'Ver más', store_path(store) %>
 </li>
 </ul>

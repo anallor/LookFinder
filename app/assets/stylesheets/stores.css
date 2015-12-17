@@ -5,14 +5,14 @@
 
 
 #map {
-	height: 69vh;
-	width: 69vh;
+	height: 450px;
+	width: 500px;
 	border-radius: 5px;
 }
 
 #places {
-	height: 69vh;
-	width: 69vh;
+	height: 450px;
+	width: 500px;
 	border-radius: 5px;
 	background: url('/giphy.gif');
 	background-size: cover;
@@ -58,7 +58,7 @@ h3 {
 .form_control_area{
 	border-radius: 6px;
 	width: 400px;
-  height: 120px;
+  height: 155px;
 }
 
 .btn_Save {
@@ -90,6 +90,7 @@ h3 {
 
 .edit {
 	margin-left: 20px;
+	height: 580px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 }

@@ -44,14 +44,17 @@ p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
 }
-.response {
-  background-color: #088A85;
-  opacity: 0.6;
+.responseto {
+ 
   border-radius: 10px;
   height: 100px;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
-  color: white;
+  color: #088A85;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 900px;
 }
 
 .helpers {
@@ -71,7 +74,7 @@ p {
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
-  color: black;
+  color: white;
   font-weight: 700;
 }
 
@@ -181,7 +184,8 @@ header::before {
   top: 0;
   display: block;
   background-color: #8a8;
-  background-image: url("/rsz_background_gray.jpg");
+  /*background-image: url("/rsz_background_gray.jpg");*/
+  background-image: url("/background5.jpg");
   background-size: cover;
   -webkit-transform-origin: center center 0;
   -webkit-transform: translateZ(-1px) scale(2);
@@ -202,7 +206,8 @@ header p {
   padding-bottom: 15px;
     /*background-color: #3498db;*/
     height: 150px;
-    color: #088A85;
+   /* color: #088A85;*/
+   color: white;
 font-family: 'Poiret One', cursive;
  
 }
@@ -239,6 +244,35 @@ main {
     padding-right: 40px;
 
 }
+
+#request_product {
+  color: black;
+}
+
+#request_place {
+  color: black;
+}
+
+
+#request_name {
+  color: black;
+}
+
+
+#request_email {
+  color: black;
+}
+
+.storebox {
+  font-size: 16px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+
+
 
 
 

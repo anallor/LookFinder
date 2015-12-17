@@ -8,7 +8,7 @@ class RequestsController < ApplicationController
 	end
 
 	def create
-
+		@cities = Place.all
 	 	request = user_signed_in? ? current_user.requests : Request
 	 	@request = request.new request_params
 	 	if @request.save

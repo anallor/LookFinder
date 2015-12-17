@@ -38,7 +38,7 @@
 
  <strong>¿Qué prenda de ropa o calzado estás buscando?</strong> <br><%= f.text_field :product, :placeholder => " Pantalones palazzo color negro", class: 'form_control' %><br><br>
 
- <strong>¿Dónde? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map { |c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
+ <strong>¿Dónde? Selecciona una ciudad del desplegable</strong>  <br> <%= f.select :place, @cities.map {|c| [c.city] }.sort, {}, {required: 'true', autofocus: 'true',  class: 'select_control'} %><br><br>
 
 
   <strong>Déjanos tu nombre</strong> <br><%= f.text_field :name, :placeholder => " Escribe tu nombre aquí",class: 'form_control' %><br><br>
@@ -72,15 +72,15 @@
 	<div class="row explication">
 		<div class="col-md-4 description">
 		<div class="titles">USUARIOS</div>
-	  Escribe lo que estás buscando: Una falda de tul, una americana de terciopelo, un top de paillettes... Especfica todo lo que quieras o haz una búsqueda más amplia. Introduce tu nombre y tu e-mail o loggeate, elige en qué ciudad 
+	  Escribe lo que estás buscando: una falda de tul, una americana de terciopelo, un top de paillettes... Especfica el producto al máximo con color o talla, o haz una búsqueda más amplia. Haz la búsqueda registrad@ o sin registrar, lo que tu prefieras, elige en qué ciudad estás buscando el producto y espera a que la tiendas que tienen el producto contacten contigo por e-mail.
 	</div>
 		<div class="col-md-4 description">
 		<div class="titles">TIENDAS</div>
-	  Aumenta las visitas a tu tienda. Si formas parte de la base de datos de LOOKFINDER recibirás las búsquedas de los usuarios. Si tienes la prenda que buscan respóndeles y consigue fácilmente un posible nuevo cliente. No esperes más y forma parte de LOOKFINDER
+	  Forma parte de la base de datos de LookFinder y aumenta las visitas a tu tienda. Recibirás al instante y en tu cuenta de correo electrónico las búsquedas de los usuarios que están tratando de encontrar una prenda en tu ciudad. Si tienes la prenda buscada respóndeles y consigue fácilmente un posible nuevo cliente. 
 	</div>
 	<div class="col-md-4 description">
 		<div class="titles">LOOKFINDER</div>
-	  No pagas nada, no te compromete a nada, ahorra tiempo y esfuerzos, se acabó recorrer toda la ciudad buscando algo, se acabó bucear por Internet, LOOKFINDER: pone en contacto usuarios y tiendas
+	 Utiliza Lookfinder y ahorra tiempo y esfuerzos. Se acabó recorrer toda la ciudad buscando un cinturón joya o un LBD, se acabó navegar por Internet horas y horas y esperar a que te traigan a casa lo comprado para saber si es exactamente lo que estabas buscando. LOOKFINDER: pone en contacto usuarios y tiendas de una misma ciudad. 
 	</div>
 	 </div>
 </main>

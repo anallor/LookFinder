@@ -2,16 +2,16 @@
 
 Hola <strong><%= @user.name %></strong> <br>
 
-Tus búsquedas:
-<div class="row">
+Éste tu historial de búsquedas realizadas en LOOKFINDER:
+<div class="row boxes">
 <ul>
  <% @requests.each do |request| %>
- <div class="col-md-4 requests">
-<li>
-     Producto: <strong><%= request.product %></strong><br>
-      Ciudad: <%= request.place %> <br>
-      Búsqueda realizada el: <%= request.created_at.strftime('%d/%m/%Y') %> <br>
-
+ <div class="col-md-4">
+<li class="boxes">
+ Producto: <strong><%= request.product %></strong><br>
+ Ciudad: <%= request.place %> <br>
+ Búsqueda realizada el: <%= request.created_at.strftime('%d/%m/%Y') %> <br>
+ <br>
 </li>
 </div>
   <% end %>
